@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table,
+    th,
+    td {
+        border: 1px;
+
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>owner</title>
+    <link rel="stylesheet" href="owner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="ownerMenu.html">Menu</a>
+        <a href="ownerOrderList.html">Order List</a>
+        <a href="OwnerReport.html">Report</a>
+      </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/home.png" width="20%">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a style="color: aliceblue;" href="">EN</a></li>
+                <li><a style="color: aliceblue;">|</a></li>
+            </ul>
+        </nav>
+        <a href=""> <img src="images/shoppingcart.png"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+   
+    <div style="margin-top: 3%;" class="header">
+        <h1 style="margin-left: 40%;">Restaurant Information</h1>
+        <div class="container-1">
+            <div class="row">
+                <table style="width:50%;margin-top:3%;">
+                    <tr>
+
+                        <td style="width: 25%;text-align: center;" rowspan="6"><img src="images/mamak.jpg" height="150">
+                        </td>
+
+                    </tr>
+
+                    <tr class="color">
+                        <td style="width:10%;text-align: center;">Name :</td>
+                        <td style="text-align: center;">Farouk Restaurant </td>
+                    </tr>
+                    <tr class="color">
+                        <td style="width:10%;text-align: center;">Location :</td>
+                        <td style="text-align: center;"> <a href="">Pekan, Pahang</a></td>
+                    </tr>
+                    <tr class="color">
+                        <td style="width:10%;text-align: center;">Operation Hours :</td>
+                        <td style="text-align: center;">Monday-Friday (8.00A.M-12.00P.M) Saturday-Sunday (Closed)
+                        </td>
+                    </tr>
+
+
+                </table>
+                
+            </div>
+        </div>
+        <div class="social">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="btn-1">
+
+                            <table style="margin-top:3%;">
+
+                                <tr class="color">
+                                    <td><img style="width: 25px;" src="images/mail.png"></td>
+                                    <td>Farouk@gmail.com</td>
+                                </tr>
+                                <tr class="color">
+                                    <td><img style="width: 25px;" src="images/telephone.png"></td>
+                                    <td>0123456789</td>
+                                </tr>
+                                <tr class="color">
+                                    <td><img style="width: 25px;" src="images/instagram.png"></td>
+                                    <td>Farouk.Restaurant</td>
+                                </tr>
+
+
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <div style="margin-right: 10%;" class="col-3">
+                        <img src="images/nasi.jpg">
+                    </div>
+                    <div style="margin-top: 15%;" class="col">
+                        <a href="" class="btn">Edit </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------footer------->
+    <div class="footer">
+        <div class="container">
+            <p>Why Us ? | Contact Us </p>
+        </div>
+    </div>
+
+    <!---------js for toggle menu------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

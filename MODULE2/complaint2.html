@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculation</title>
+    <link rel="stylesheet" href="complaintcss1.css">
+</head>
+<script>
+function myFunction() {
+    var f = parseInt(document.getElementsByName('num1')[0].value);
+    var s = parseInt(document.getElementsByName('num2')[0].value);
+    var z = parseInt(document.getElementsByName('num3')[0].value);
+
+    var result = f+s+z;
+    document.getElementsByName('totalpenalty')[0].value= result;
+}
+</script>
+
+
+<style>
+    table {
+        margin-top: 30px;
+    }
+
+    table {
+        border-spacing: 15px;
+    }
+
+    .kotakform2 input {
+        height: 45px;
+        width: 50%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: none;
+        font-size: 15px;
+        border-bottom-width: 2px;
+        transition: all 0, 3s ease;
+    }
+
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/home.png" alt="" width="30%">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a style="color: aliceblue;" href="">EN</a></li>
+                <li><a style="color: aliceblue;">|</a></li>
+            </ul>
+        </nav>
+
+        <a href=""> <img src="images/shoppingcart.png"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+    <div class="kotakform2" style="margin-top: 2% ;">
+        <div class="tajuk">Penalty Calculator</div>
+        <table>
+            <th colspan="2">Enter the number of complaint</th>
+            <form action="" name="myForm">
+                <tr>
+                    <td>Late delivery</td>
+                    <td><input type="text" name="num1"></td>
+                    <td colspan="2" rowspan="3">Total Penalty</td>
+                    <td rowspan="3"><input type="text" name="totalpenalty"></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Damaged Item</td>
+                    <td><input type="text" name="num2"></td>
+                </tr>
+
+                <tr>
+                    <td>Wrong Item</td>
+                    <td><input type="text" name="num3"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="butang"><input type="submit" name="submit" onclick="myFunction()"></td>
+                </tr>
+
+
+
+            </form>
+        </table>
+        <div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer" style="margin-top:5%;">
+        <div class="container">
+            <p>Why Us ? | Contact Us </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

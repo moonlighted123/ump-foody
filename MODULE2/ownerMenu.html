@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Menu</title>
+    <link rel="stylesheet" href="OwnerMenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/home.png" width="20%">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a style="color: aliceblue;" href="">EN</a></li>
+                <li><a style="color: aliceblue;">|</a></li>
+            </ul>
+        </nav>
+        <a href=""> <img src="images/shoppingcart.png"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="flex-container">
+        <p><a href="" class="btn active">Malaysian Food </a> </p>
+        <p style="margin-right: 5%;margin-left:5%;"> <a href="" class="btn">Dessert</a></p>
+        <a href="" class="btn">Seafood</a>
+    </div>
+
+    <div style="margin-top: 3%;" class="header">
+        <h1 style="margin-left: 35%;">Restaurant Information</h1>
+        <div class="container-1">
+            <div class="row">
+                
+                <div >
+                    <img src="images/mamak.jpg" alt="HTML5 Icon" width="128" height="128">
+                 
+                </div>
+
+                <div >
+
+                    <h4>Nasi Lemak </h4>
+                    <p>RM 15.00</p>
+                    <p>Nasi Lemak, 2 pcs Chicken, Egg</p>
+                </div>
+
+                <div >
+
+                    <h4>Availability</h4>
+                    <img src="images/remove.png" alt="HTML5 Icon" width="30" height="30">
+                    <img src="images/check.png" alt="HTML5 Icon" width="30" height="30">
+                </div>
+
+            </div>
+            <div style="margin-top: 5%;" class="row">
+                
+                <div class="">
+                    <img src="images/mamak.jpg" alt="HTML5 Icon" width="128" height="128">
+                 
+                </div>
+
+                <div  >
+
+                    <h4>Nasi Ayam </h4>
+                    <p>RM 15.00</p>
+                    <p>Nasi, 2 pcs Chicken, Egg</p>
+                </div>
+
+                <div >
+
+                    <h4>Availability</h4>
+                    <img src="images/remove.png" alt="HTML5 Icon" width="30" height="30">
+                    <img src="images/check.png" alt="HTML5 Icon" width="30" height="30">
+                </div>
+
+            </div>
+            <div  style="margin-top: 5%;" class="row">
+                
+                <div class="">
+                    <img src="images/mamak.jpg" alt="HTML5 Icon" width="128" height="128">
+                 
+                </div>
+
+                <div  >
+
+                    <h4>Nasi Goreng </h4>
+                    <p>RM 15.00</p>
+                    <p>Nasi, 2 pcs Chicken, Egg</p>
+                </div>
+
+                <div >
+
+                    <h4>Availability</h4>
+                    <img src="images/remove.png" alt="HTML5 Icon" width="30" height="30">
+                    <img src="images/check.png" alt="HTML5 Icon" width="30" height="30">
+                </div>
+
+            </div>
+            
+
+
+
+        </div>
+    </div>
+
+
+    <!---------footer------->
+    <div style="margin-top: 10%;" class="footer">
+        <div class="container">
+            <p>Why Us ? | Contact Us </p>
+        </div>
+    </div>
+
+    <!---------js for toggle menu------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
