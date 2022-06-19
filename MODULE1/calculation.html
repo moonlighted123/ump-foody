@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <link rel="stylesheet" href="owner.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 300px; 
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            background-color: #2E86C1  ;
+            padding: 5px;
+            font-size:larger;
+             }
+
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        /*---------footer-------*/
+        .footer {
+            background: #2E86C1;
+            color:aliceblue;
+            font-size: 14px;
+            padding: 10px 0 10px;
+        }
+        .footer p{
+            color: aliceblue;
+        }
+
+        #footer {
+            position: fixed;
+            margin-top: 15px;
+            height: 50; width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+            bottom: 0;
+          }
+          #footer ul {
+            list-style-type: none;
+          }
+          #footer ul li {
+            display: inline;
+            margin: 0 15px;
+          }
+
+        .menu-icon{
+            width: 28px;
+            margin-left: 20px;
+            display: none;
+        }
+
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .container-1{
+            max-width: 1000px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 300px; 
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 300px; 
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+                    
+        </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <body style="background-color: white;">
+      
+        <div class="navbar">
+            <div class="logo">
+              <img src="images/home.png" width="30%">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a style="color: aliceblue;" href="">EN</a></li>
+                    <li><a style="color: aliceblue;">|</a></li>
+                </ul>
+            </nav>
+            <a href=""> <img src="images/shoppingcart.png"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+      <div style="margin: auto;  
+                /* background-color: #A9A9A9; */
+                width: 900px;
+                height: 450px;   
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);"
+                >
+                <H3 style="text-align: center;">Calculation</H3>    
+                  <div style="margin: auto;  
+                  background-color: white;
+                  width: 120%;
+                  height: 350px;   
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -moz-transform: translateX(-50%) translateY(-50%);
+                  -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);"
+                  >
+                    <H3 style="text-align: center;">Total User</H3> 
+                    <div class="row">
+                      <div class="column">
+                        <div class="container mt-4">   
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            Enter Restaurant Owner Number
+                          </div>
+                          <div class="col-3">
+                            <input type="number" value="0" class="qty" id="qty_sugar" style="width:30%"/>
+                          </div>
+                        </div>
+                        
+                         <div class="row my-3">
+                          <div class="col-6">
+                           Enter General User Number
+                          </div>
+                          <div class="col-3">
+                            <input type="number" value="0" class="qty" id="qty_butter" style="width:30%"/>
+                          </div>
+                        </div>
+                        
+                        <div class="row my-3">
+                          <div class="col-6">
+                           Enter Number
+                          </div>
+                          <div class="col-3">
+                            <input type="number" class="qty" value="0" id="qty_eggs" style="width:30%"/>
+                        </div>
+                       
+                       
+                        <div class="row my-4">
+                          <div class="col-9 text-right total">
+                            <button style="  background: #2E86C1; background: #2E86C1; border-radius: 5px; padding: 5px;">Enter</button>
+                           Total User:
+                          </div>
+
+                         
+                          
+                          <div class="col-2 total-val">
+                            <span id="total_value" style="width: 300px;
+                            border: 1px solid black;
+                            padding: 10px;
+                            margin: 20px;">0</span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      </div>
+                      <div class="column">
+                        <div class="container mt-4">   
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            Enter User Number
+                          </div>
+                          <div class="col-3">
+                            <input type="number" value="0" class="qty" id="qty_sugar" style="width:30%"/>
+                          </div>
+                        </div>
+                        
+                         <div class="row my-3">
+                          <div class="col-6">
+                           Enter Kolej Kediaman User Number
+                          </div>
+                          <div class="col-3">
+                            <input type="number" value="0" class="qty" id="qty_butter" style="width:30%"/>
+                          </div>
+                        </div>
+                       
+
+                        <div class="row my-4">
+                          <div class="col-9 text-right total">
+                            <button style="background: #2E86C1; background: #2E86C1; border-radius: 5px; padding: 5px;" >Enter</button>
+                           Total User:
+                          </div>
+                          
+                          <div class="col-2 total-val">
+                            <span id="total_value" style="width: 300px;
+                            border: 1px solid black;
+                            padding: 10px;
+                            margin: 20px;">0</span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      </div>
+                    </div>
+                    <button style="margin-top: 43%; display: block;margin-left: auto; margin-right: auto;">Print Report</button>
+  
+      </div> 
+
+      <div class="footer" style="margin-top:45%;">
+        <div class="container">
+            <p>Why Us ? | Contact Us </p>
+        </div>
+    </div>
+    </body>
+   
+</html>
